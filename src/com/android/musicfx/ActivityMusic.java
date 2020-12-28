@@ -410,8 +410,8 @@ public class ActivityMusic extends AppCompatActivity {
                 mDrawerLayout.closeDrawer(mDrawerList);
                 if (id == R.id.menu_speaker) {
                     updateForLevel(ControlPanelEffect.SPEAKER_PREF_SCOPE);
-                } else if (id == R.id.menu_headset) {
-                    updateForLevel(ControlPanelEffect.HEADSET_PREF_SCOPE);
+                /*} else if (id == R.id.menu_headset) {
+                    updateForLevel(ControlPanelEffect.HEADSET_PREF_SCOPE);*/
                 } else if (id == R.id.menu_bluetooth) {
                     updateForLevel(ControlPanelEffect.BLUETOOTH_PREF_SCOPE);
                 } else if (id == R.id.save_preset) {
@@ -473,9 +473,9 @@ public class ActivityMusic extends AppCompatActivity {
         if (mCurrentLevel == ControlPanelEffect.SPEAKER_PREF_SCOPE) {
             setTitle(getResources().getString(R.string.drawer_item_speaker));
             mDrawerList.getMenu().findItem(R.id.menu_speaker).setChecked(true);
-        } else if (mCurrentLevel == ControlPanelEffect.HEADSET_PREF_SCOPE) {
+        /*} else if (mCurrentLevel == ControlPanelEffect.HEADSET_PREF_SCOPE) {
             setTitle(getResources().getString(R.string.drawer_item_headset));
-            mDrawerList.getMenu().findItem(R.id.menu_headset).setChecked(true);
+            mDrawerList.getMenu().findItem(R.id.menu_headset).setChecked(true);*/
         } else if (mCurrentLevel == ControlPanelEffect.BLUETOOTH_PREF_SCOPE) {
             setTitle(getResources().getString(R.string.drawer_item_bluetooth));
             mDrawerList.getMenu().findItem(R.id.menu_bluetooth).setChecked(true);
